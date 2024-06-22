@@ -1,0 +1,80 @@
+svg {
+  display: block;
+}
+body {
+  font-family: Helvetica, Arial;
+}
+#tooltip {
+  border: solid 1px black;
+  padding: 5px;
+  position: absolute;
+  display: none;
+  background: red;
+}
+
+.dot {
+  stroke: #000;
+}
+.line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2;
+}
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  height: 75px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #b3cccc;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #d4d8da;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: #6f257f;
+  stroke-width: 5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #f1f3f3;
+  stroke: #6f257f;
+  stroke-width: 5px;
+}
+
+.hover-line {
+  stroke: #6f257f;
+  stroke-width: 2px;
+  stroke-dasharray: 3, 3;
+}
